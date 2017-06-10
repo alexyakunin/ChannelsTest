@@ -34,7 +34,7 @@ namespace ChannelsTest
         static void Main(string[] args)
         {
             if (!int.TryParse(args.FirstOrDefault(), out var maxCount))
-                maxCount = 500;
+                maxCount = 10000;
             Measure($"Sending {maxCount} messages (channels)", (count, isWarmup) => {
                 var firstChannel = Channel.CreateUnbuffered<int>();
                 var output = firstChannel;
