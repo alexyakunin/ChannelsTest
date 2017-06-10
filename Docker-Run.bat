@@ -1,1 +1,2 @@
-docker run "alexyakunin/channelstest" .
+@call Docker-Settings.bat
+docker run "%DockerRepo%"

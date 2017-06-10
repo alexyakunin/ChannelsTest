@@ -1,1 +1,2 @@
-docker build -t "alexyakunin/channelstest" .
+@call Docker-Settings.bat
+docker build -t "%DockerRepo%" .

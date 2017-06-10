@@ -1,1 +1,2 @@
-docker pull "alexyakunin/channelstest" .
+@call Docker-Settings.bat
+docker pull "%DockerRepo%"
